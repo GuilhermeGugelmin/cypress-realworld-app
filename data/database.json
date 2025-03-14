@@ -107,6 +107,17 @@
       "balance": 0,
       "createdAt": "2025-03-14T13:38:57.841Z",
       "modifiedAt": "2025-03-14T13:38:57.841Z"
+    },
+    {
+      "id": "N870adBMi",
+      "uuid": "adfa87e2-8bfd-42cd-a43f-e936f7dced0c",
+      "firstName": "new",
+      "lastName": "user",
+      "username": "new-user-not-history",
+      "password": "$2a$10$BqHKj4sNYJk3w8iC6DAt1uKcejk6mwCDhNTG1QP273M6Edy6b7fvy",
+      "balance": 0,
+      "createdAt": "2025-03-14T16:52:30.782Z",
+      "modifiedAt": "2025-03-14T16:52:30.782Z"
     }
   ],
   "contacts": [
@@ -308,6 +319,17 @@
       "isDeleted": false,
       "createdAt": "2025-03-14T13:39:39.695Z",
       "modifiedAt": "2025-03-14T13:39:39.695Z"
+    },
+    {
+      "id": "KTh6IMiqR",
+      "uuid": "41ea8156-b811-4749-8290-cc27c3501044",
+      "userId": "N870adBMi",
+      "bankName": "Banco do Brasil",
+      "accountNumber": "555555555",
+      "routingNumber": "444444444",
+      "isDeleted": false,
+      "createdAt": "2025-03-14T16:53:33.139Z",
+      "modifiedAt": "2025-03-14T16:53:33.139Z"
     }
   ],
   "transactions": [

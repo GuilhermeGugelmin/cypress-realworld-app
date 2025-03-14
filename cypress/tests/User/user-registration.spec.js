@@ -1,5 +1,7 @@
 
+
 describe('User Registration', () => {
+
 
   it('User Registration Success', () => {
     cy.visit('http://localhost:3000/signin')
@@ -23,6 +25,7 @@ describe('User Registration', () => {
     cy.get("[data-test='user-onboarding-next']").click()
   })
 
+
   it('User Registration Fail - Incomplete Information - Fist Name', () => {
       cy.visit('http://localhost:3000/signin')
       cy.get("[href='/signup']").click()
@@ -33,6 +36,7 @@ describe('User Registration', () => {
       cy.get("[name='confirmPassword']").type('13572468')
       cy.get("[data-test='signup-first-name']") 
   })
+
 
   it('User Registration Fail - Incomplete Information - Last Name', () => {
     cy.visit('http://localhost:3000/signin')
@@ -45,6 +49,7 @@ describe('User Registration', () => {
     cy.get("[data-test='signup-last-name']") 
   })
 
+
   it('User Registration Fail - Incomplete Information - Username', () => {
     cy.visit('http://localhost:3000/signin')
     cy.get("[href='/signup']").click()
@@ -55,6 +60,7 @@ describe('User Registration', () => {
     cy.get("[name='confirmPassword']").type('13572468')
     cy.get("[data-test='signup-last-name']") 
   })
+
 
   it('User Registration Fail - Incomplete Information - Password', () => {
     cy.visit('http://localhost:3000/signin')
@@ -67,6 +73,7 @@ describe('User Registration', () => {
     cy.get("[data-test='signup-password']") 
   })
 
+
   it('User Registration Fail - Incomplete Information - Confirm Password', () => {
     cy.visit('http://localhost:3000/signin')
     cy.get("[href='/signup']").click()
@@ -77,6 +84,7 @@ describe('User Registration', () => {
     cy.get("[name='confirmPassword']").click()
     cy.get("[data-test='signup-confirmPassword']") 
   })
+
 
   it('User Registration Fail - Password Does Not Match', () => {
     cy.visit('http://localhost:3000/signin')
@@ -89,6 +97,7 @@ describe('User Registration', () => {
     cy.get("[data-test='signup-confirmPassword']") 
   })
 
+  
 })
 
 
